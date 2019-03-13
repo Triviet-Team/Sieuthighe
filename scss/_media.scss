@@ -1,0 +1,215 @@
+$main_color: #A1C45A;
+
+@mixin o1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+@mixin o2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+@mixin o3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+@mixin o4 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+// ------------------
+
+
+
+
+@media (min-width: 1260px) {
+  .container {
+    max-width: 1230px;
+  }
+}
+
+@media (max-width: 1200px) {
+  body {
+    margin-left: 15px;
+    font-size: calc(9px + 0.4vmax);
+  }
+
+  .menu .main-menu .nav li {
+    padding: 0 13px;
+
+    a {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .menu {
+    height: auto;
+    background: white;
+    border-top: 1px solid #e1e1e1;
+
+    .main-menu {
+      border: 0;
+      position: absolute;
+      left: -15px;
+      top: 0;
+      width: 100%;
+      
+      .toggleMenu, .search-btn {
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 93px;
+        margin: 15px 0;
+        z-index: 10;
+        color: black;
+        border-radius: 3px;
+        padding: 1px 8px;
+      }
+
+      .cart-btn {
+        top: 101px;
+        position: absolute;
+        right: 0;
+      }
+
+      .search-btn {
+        font-size: 22px;
+        right: 60px;
+        top: -6px;
+      }
+
+      .nav {
+        display: block;
+        text-align: left;
+        background: black;
+        position: absolute;
+        width: 300px;
+        transform: translate(-300px, 0);
+        margin-top: -2px;
+        transition: .3s;
+        height: 100vh;
+        opacity: 0;
+        padding-top: 30px;
+        left: 15px;
+        z-index: 1010;
+        color: white;
+
+        &.out {
+          transform: translate(0, 0);
+          opacity: 1;
+        }
+
+        li {
+          display: block;
+          padding: 20px 30px;
+
+          &:first-child {
+            margin-top: 30px;
+          }
+
+
+          &:hover {
+            a {
+              border-bottom: 0;
+            }
+          }
+
+          a {
+            line-height: 1.5;
+            padding: 0;
+            padding-bottom: 5px;
+            font-weight: 500;
+          }
+
+          .active {
+            border-bottom: 1px solid $main_color;
+            background: none;
+          }
+        }
+      }
+    }
+
+    .slider {
+      display: none;
+    }
+  }
+  
+  .nav-close {
+    position: absolute;
+    font-size: 24px;
+    top: 10px;
+    right: 10px;
+    color: white;
+  }
+
+  .slider {
+    
+    .container {
+      max-width: 100%;
+      padding: 0;
+    }
+  }
+}
+
+
+
+@media (max-width: 767px) {
+  article {
+    padding-top: 60px;
+  }
+  .menu {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 60px;
+    z-index: 999;
+
+    .container {
+      position: absolute;
+      max-width: 100%;
+    }
+
+    .sidebar {
+      width: 200px;
+    }
+
+    .main-menu {
+      .cart-btn {
+        font-size: 22px;
+        top: 2px;
+      }
+
+      .toggleMenu {
+        top: -5px;
+        right: 35px;
+        padding: 0;
+      }
+      
+      .search-btn {
+        top: -3px;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 575px) {
+
+}
+
+@media (max-width: 400px) {
+  
+}
