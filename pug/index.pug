@@ -1,71 +1,425 @@
 extends _inc
 
-block article
-  .modal.quickview.fade.product-modal-1.show(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle')
-    .modal-dialog.modal-lg.modal-dialog-centered(role='document')
-      .modal-content
-        .modal-header
-          h5#exampleModalCenterTitle.modal-title Xem nhanh sản phẩm
-          button.close(type='button', data-dismiss='modal', aria-label='Close')
-            span(aria-hidden='true') ×
-        .modal-body
-          .row
-            .col-lg-6
-              .modal-img
-                img.main-image.xzoom(src='../img/product-1.png', xoriginal='../img/product-1.png')
-                .xzoom-thumbs
-                  .owl-carousel.xzoom-carousel.owl-theme
-                    .item
-                      a(href='../img/product-1.png')
-                        img.xzoom-gallery(src='../img/product-1.png', xpreview='../img/product-1.png')
-                    .item
-                      a(href='../img/product-2.png')
-                        img.xzoom-gallery(src='../img/product-2.png', xpreview='../img/product-2.png')
-                    .item
-                      a(href='../img/product-1.png')
-                        img.xzoom-gallery(src='../img/product-1.png', xpreview='../img/product-1.png')
-                    .item
-                      a(href='../img/product-2.png')
-                        img.xzoom-gallery(src='../img/product-2.png', xpreview='../img/product-2.png')
-                    .item
-                      a(href='../img/product-1.png')
-                        img.xzoom-gallery(src='../img/product-1.png', xpreview='../img/product-1.png')
-                    .item
-                      a(href='../img/product-2.png')
-                        img.xzoom-gallery(src='../img/product-2.png', xpreview='../img/product-2.png')
-            .col-lg-6
-              .quickview-detail
-                h2 Logitech G502 Proteus Spectrum
-                h4.price-product
-                  | Giá: Liên hệ
-                h5
-                  | This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
-                .quantity
-                  span Số lượng: 
-                  button.waves-effect.waves-light -
-                  input(type='number', value='1', min='1')
-                  button.waves-effect.waves-light +
-                  button.custom-cart thêm vào giỏ
-              .tags
-                | Thẻ tag: 
-                span 
-                  a(href='#') Đặc sản Hàn quốc
-                | ,
-                span 
-                  a(href='#') Thời trang Hàn Quốc
-        .modal-footer
-          button.btn.btn-light(type='button', data-dismiss='modal') Đóng
-
-
-  article
-    section.slider
-      .container
-        .owl-carousel.slider-carousel.owl-theme
-          .item
-            a(href='san-pham.html')
-              img(src='../img/slider-1.png')
-          .item
-            a(href='san-pham.html')
-              img(src='../img/slider-2.png')
+block main
     
-    section(style='height: 5000px')
+  .title-page
+    h1 ghế văn phòng
+
+  .product-zone
+    .box-product
+      .box-product-img
+        span -15%
+        .box-product-img-custom
+          a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+            i.mdi.mdi-eye-plus
+          a.custom-cart(title='Xem vào giỏ')
+            i.mdi.mdi-cart
+        a(href='chi-tiet-san-pham.html')
+          img.show(src='../img/product-1.png')
+          img.hidden(src='../img/product-2.png')
+
+      .box-product-detail
+        h5
+          a(href='chi-tiet-san-pham.html', title='Ghế lưới Halona')
+            | Ghế lưới Halona
+        h4
+          | 1,095,000 VNĐ
+          span 2,000,000 VNĐ
+    
+    .box-product
+      .box-product-img
+        span -15%
+        .box-product-img-custom
+          a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+            i.mdi.mdi-eye-plus
+          a.custom-cart(title='Xem vào giỏ')
+            i.mdi.mdi-cart
+        a(href='chi-tiet-san-pham.html')
+          img.show(src='../img/product-1.png')
+          img.hidden(src='../img/product-2.png')
+
+      .box-product-detail
+        h5
+          a(href='chi-tiet-san-pham.html', title='Ghế lưới Halona')
+            | Ghế lưới Halona
+        h4
+          | 1,095,000 VNĐ
+          span 2,000,000 VNĐ
+    
+    .box-product
+      .box-product-img
+        span -15%
+        .box-product-img-custom
+          a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+            i.mdi.mdi-eye-plus
+          a.custom-cart(title='Xem vào giỏ')
+            i.mdi.mdi-cart
+        a(href='chi-tiet-san-pham.html')
+          img.show(src='../img/product-1.png')
+          img.hidden(src='../img/product-2.png')
+
+      .box-product-detail
+        h5
+          a(href='chi-tiet-san-pham.html', title='Ghế lưới Halona')
+            | Ghế lưới Halona
+        h4
+          | 1,095,000 VNĐ
+          span 2,000,000 VNĐ
+    
+    .box-product
+      .box-product-img
+        span -15%
+        .box-product-img-custom
+          a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+            i.mdi.mdi-eye-plus
+          a.custom-cart(title='Xem vào giỏ')
+            i.mdi.mdi-cart
+        a(href='chi-tiet-san-pham.html')
+          img.show(src='../img/product-1.png')
+          img.hidden(src='../img/product-2.png')
+
+      .box-product-detail
+        h5
+          a(href='chi-tiet-san-pham.html', title='Ghế lưới Halona')
+            | Ghế lưới Halona
+        h4
+          | 1,095,000 VNĐ
+          span 2,000,000 VNĐ
+    
+    .box-product
+      .box-product-img
+        span -15%
+        .box-product-img-custom
+          a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+            i.mdi.mdi-eye-plus
+          a.custom-cart(title='Xem vào giỏ')
+            i.mdi.mdi-cart
+        a(href='chi-tiet-san-pham.html')
+          img.show(src='../img/product-1.png')
+          img.hidden(src='../img/product-2.png')
+
+      .box-product-detail
+        h5
+          a(href='chi-tiet-san-pham.html', title='Ghế lưới Halona')
+            | Ghế lưới Halona
+        h4
+          | 1,095,000 VNĐ
+          span 2,000,000 VNĐ
+    
+    .box-product
+      .box-product-img
+        span -15%
+        .box-product-img-custom
+          a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+            i.mdi.mdi-eye-plus
+          a.custom-cart(title='Xem vào giỏ')
+            i.mdi.mdi-cart
+        a(href='chi-tiet-san-pham.html')
+          img.show(src='../img/product-1.png')
+          img.hidden(src='../img/product-2.png')
+
+      .box-product-detail
+        h5
+          a(href='chi-tiet-san-pham.html', title='Ghế lưới Halona')
+            | Ghế lưới Halona
+        h4
+          | 1,095,000 VNĐ
+          span 2,000,000 VNĐ
+    
+    .box-product
+      .box-product-img
+        span -15%
+        .box-product-img-custom
+          a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+            i.mdi.mdi-eye-plus
+          a.custom-cart(title='Xem vào giỏ')
+            i.mdi.mdi-cart
+        a(href='chi-tiet-san-pham.html')
+          img.show(src='../img/product-1.png')
+          img.hidden(src='../img/product-2.png')
+
+      .box-product-detail
+        h5
+          a(href='chi-tiet-san-pham.html', title='Ghế lưới Halona')
+            | Ghế lưới Halona
+        h4
+          | 1,095,000 VNĐ
+          span 2,000,000 VNĐ
+    
+    .box-product
+      .box-product-img
+        span -15%
+        .box-product-img-custom
+          a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+            i.mdi.mdi-eye-plus
+          a.custom-cart(title='Xem vào giỏ')
+            i.mdi.mdi-cart
+        a(href='chi-tiet-san-pham.html')
+          img.show(src='../img/product-1.png')
+          img.hidden(src='../img/product-2.png')
+
+      .box-product-detail
+        h5
+          a(href='chi-tiet-san-pham.html', title='Ghế lưới Halona')
+            | Ghế lưới Halona
+        h4
+          | 1,095,000 VNĐ
+          span 2,000,000 VNĐ
+    
+    .box-product
+      .box-product-img
+        span -15%
+        .box-product-img-custom
+          a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+            i.mdi.mdi-eye-plus
+          a.custom-cart(title='Xem vào giỏ')
+            i.mdi.mdi-cart
+        a(href='chi-tiet-san-pham.html')
+          img.show(src='../img/product-1.png')
+          img.hidden(src='../img/product-2.png')
+
+      .box-product-detail
+        h5
+          a(href='chi-tiet-san-pham.html', title='Ghế lưới Halona')
+            | Ghế lưới Halona
+        h4
+          | 1,095,000 VNĐ
+          span 2,000,000 VNĐ
+    
+    .box-product
+      .box-product-img
+        span -15%
+        .box-product-img-custom
+          a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+            i.mdi.mdi-eye-plus
+          a.custom-cart(title='Xem vào giỏ')
+            i.mdi.mdi-cart
+        a(href='chi-tiet-san-pham.html')
+          img.show(src='../img/product-1.png')
+          img.hidden(src='../img/product-2.png')
+
+      .box-product-detail
+        h5
+          a(href='chi-tiet-san-pham.html', title='Ghế lưới Halona')
+            | Ghế lưới Halona
+        h4
+          | 1,095,000 VNĐ
+          span 2,000,000 VNĐ
+    
+    .box-product
+      .box-product-img
+        span -15%
+        .box-product-img-custom
+          a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+            i.mdi.mdi-eye-plus
+          a.custom-cart(title='Xem vào giỏ')
+            i.mdi.mdi-cart
+        a(href='chi-tiet-san-pham.html')
+          img.show(src='../img/product-1.png')
+          img.hidden(src='../img/product-2.png')
+
+      .box-product-detail
+        h5
+          a(href='chi-tiet-san-pham.html', title='Ghế lưới Halona')
+            | Ghế lưới Halona
+        h4
+          | 1,095,000 VNĐ
+          span 2,000,000 VNĐ
+    
+    .box-product
+      .box-product-img
+        span -15%
+        .box-product-img-custom
+          a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+            i.mdi.mdi-eye-plus
+          a.custom-cart(title='Xem vào giỏ')
+            i.mdi.mdi-cart
+        a(href='chi-tiet-san-pham.html')
+          img.show(src='../img/product-1.png')
+          img.hidden(src='../img/product-2.png')
+
+      .box-product-detail
+        h5
+          a(href='chi-tiet-san-pham.html', title='Ghế lưới Halona')
+            | Ghế lưới Halona
+        h4
+          | 1,095,000 VNĐ
+          span 2,000,000 VNĐ
+    
+    .box-product
+      .box-product-img
+        span -15%
+        .box-product-img-custom
+          a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+            i.mdi.mdi-eye-plus
+          a.custom-cart(title='Xem vào giỏ')
+            i.mdi.mdi-cart
+        a(href='chi-tiet-san-pham.html')
+          img.show(src='../img/product-1.png')
+          img.hidden(src='../img/product-2.png')
+
+      .box-product-detail
+        h5
+          a(href='chi-tiet-san-pham.html', title='Ghế lưới Halona')
+            | Ghế lưới Halona
+        h4
+          | 1,095,000 VNĐ
+          span 2,000,000 VNĐ
+    
+    .box-product
+      .box-product-img
+        span -15%
+        .box-product-img-custom
+          a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+            i.mdi.mdi-eye-plus
+          a.custom-cart(title='Xem vào giỏ')
+            i.mdi.mdi-cart
+        a(href='chi-tiet-san-pham.html')
+          img.show(src='../img/product-1.png')
+          img.hidden(src='../img/product-2.png')
+
+      .box-product-detail
+        h5
+          a(href='chi-tiet-san-pham.html', title='Ghế lưới Halona')
+            | Ghế lưới Halona
+        h4
+          | 1,095,000 VNĐ
+          span 2,000,000 VNĐ
+    
+    .box-product
+      .box-product-img
+        span -15%
+        .box-product-img-custom
+          a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+            i.mdi.mdi-eye-plus
+          a.custom-cart(title='Xem vào giỏ')
+            i.mdi.mdi-cart
+        a(href='chi-tiet-san-pham.html')
+          img.show(src='../img/product-1.png')
+          img.hidden(src='../img/product-2.png')
+
+      .box-product-detail
+        h5
+          a(href='chi-tiet-san-pham.html', title='Ghế lưới Halona')
+            | Ghế lưới Halona
+        h4
+          | 1,095,000 VNĐ
+          span 2,000,000 VNĐ
+    
+    .box-product
+      .box-product-img
+        span -15%
+        .box-product-img-custom
+          a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+            i.mdi.mdi-eye-plus
+          a.custom-cart(title='Xem vào giỏ')
+            i.mdi.mdi-cart
+        a(href='chi-tiet-san-pham.html')
+          img.show(src='../img/product-1.png')
+          img.hidden(src='../img/product-2.png')
+
+      .box-product-detail
+        h5
+          a(href='chi-tiet-san-pham.html', title='Ghế lưới Halona')
+            | Ghế lưới Halona
+        h4
+          | 1,095,000 VNĐ
+          span 2,000,000 VNĐ
+    
+    .box-product
+      .box-product-img
+        span -15%
+        .box-product-img-custom
+          a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+            i.mdi.mdi-eye-plus
+          a.custom-cart(title='Xem vào giỏ')
+            i.mdi.mdi-cart
+        a(href='chi-tiet-san-pham.html')
+          img.show(src='../img/product-1.png')
+          img.hidden(src='../img/product-2.png')
+
+      .box-product-detail
+        h5
+          a(href='chi-tiet-san-pham.html', title='Ghế lưới Halona')
+            | Ghế lưới Halona
+        h4
+          | 1,095,000 VNĐ
+          span 2,000,000 VNĐ
+    
+    .box-product
+      .box-product-img
+        span -15%
+        .box-product-img-custom
+          a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+            i.mdi.mdi-eye-plus
+          a.custom-cart(title='Xem vào giỏ')
+            i.mdi.mdi-cart
+        a(href='chi-tiet-san-pham.html')
+          img.show(src='../img/product-1.png')
+          img.hidden(src='../img/product-2.png')
+
+      .box-product-detail
+        h5
+          a(href='chi-tiet-san-pham.html', title='Ghế lưới Halona')
+            | Ghế lưới Halona
+        h4
+          | 1,095,000 VNĐ
+          span 2,000,000 VNĐ
+    
+    .box-product
+      .box-product-img
+        span -15%
+        .box-product-img-custom
+          a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+            i.mdi.mdi-eye-plus
+          a.custom-cart(title='Xem vào giỏ')
+            i.mdi.mdi-cart
+        a(href='chi-tiet-san-pham.html')
+          img.show(src='../img/product-1.png')
+          img.hidden(src='../img/product-2.png')
+
+      .box-product-detail
+        h5
+          a(href='chi-tiet-san-pham.html', title='Ghế lưới Halona')
+            | Ghế lưới Halona
+        h4
+          | 1,095,000 VNĐ
+          span 2,000,000 VNĐ
+    
+    .box-product
+      .box-product-img
+        span -15%
+        .box-product-img-custom
+          a.custom-quickview(title='Xem nhanh', data-toggle="modal" data-target=".product-modal-1", href='#')
+            i.mdi.mdi-eye-plus
+          a.custom-cart(title='Xem vào giỏ')
+            i.mdi.mdi-cart
+        a(href='chi-tiet-san-pham.html')
+          img.show(src='../img/product-1.png')
+          img.hidden(src='../img/product-2.png')
+
+      .box-product-detail
+        h5
+          a(href='chi-tiet-san-pham.html', title='Ghế lưới Halona')
+            | Ghế lưới Halona
+        h4
+          | 1,095,000 VNĐ
+          span 2,000,000 VNĐ
+    
+  nav
+    ul.pagination.justify-content-end
+      li.page-item
+        a.page-link(href='#', aria-label='Previous')
+          span(aria-hidden='true') «
+          span.sr-only Previous
+      li.page-item
+        a.page-link.active(href='#') 1
+      li.page-item
+        a.page-link(href='#') 2
+      li.page-item
+        a.page-link(href='#') 3
+      li.page-item
+        a.page-link(href='#', aria-label='Next')
+          span(aria-hidden='true') »
+          span.sr-only Next  
+

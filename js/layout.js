@@ -77,16 +77,6 @@ $(document).ready(() => {
     return false;
   });
 
-  $('.toggleMenu').click(() => {
-    $('.nav').addClass('out');
-    $('.overlay-menu').addClass('overlay-in');
-  });
-
-  $('.overlay-menu, .nav-close').click(function() {
-    $('.overlay-menu').removeClass('overlay-in');
-    $('.nav').removeClass('out');
-  });
-
   // NOTIFICATION ADD TO CART 
   $('.custom-cart').click(() => {
     Swal({
@@ -125,9 +115,28 @@ $(document).ready(() => {
       $(this).closest("a").addClass("active");
     }
   });
+  
+  $('.toggleMenu').click(() => {
+    $('.nav').addClass('out');
+    $('.overlay-menu').addClass('overlay-in');
+  });
+
+  $('.overlay-menu, .nav-close').click(function() {
+    $('.overlay-menu').removeClass('overlay-in');
+    $('.nav').removeClass('out');
+    $('.left').removeClass('active');
+  });
 
   $('.search-btn').click(() => {
     $('.search-btn i').toggleClass('mdi-magnify mdi-close');
     $('.search-form').toggleClass('active')
+  });
+
+  $('.category-btn').click(() => {
+    $('.left').addClass('active');
+  })
+
+  $('.category-close').click(() => {
+    $('.left').removeClass('active');
   });
 });

@@ -26,17 +26,17 @@ html(lang="en")
         section.header-top
           .container
             .row
-              .col-xl-6.d-none.d-xl-block
+              .col-xl-5.d-none.d-xl-block
                 h5 Chào mừng quý khách đến với Siêu thị ghế văn phòng Thanh Thúy
               
-              .col-xl-6.text-center.text-xl-right
+              .col-xl-7.text-center.text-xl-right
                 ul
                   li
                     i.mdi.mdi-email-outline
-                    | info@triviet.net
+                    | sieuthighevanphong@gmail.com
                   li
                     i.mdi.mdi-map-marker-radius
-                    | 311K13 Đường 8, KP1, P. An Phú, Quận 2, TP.HCM
+                    | 108B Đông Hưng Thuận, P. Đông Hưng Thuận, Quận 12, Tp.HCM
         
         section.header-bottom
           .container
@@ -45,13 +45,13 @@ html(lang="en")
                 img(src='../img/logo.png')
 
             .row
-              .col-md-6
+              .col-sm-6.d-none.d-sm-block
                 .hotline
                   h3
                     i.mdi.mdi-deskphone
                     | 0912 345 678
 
-              .col-md-6.text-right
+              .col-sm-6.text-right
                 .custom-header
                   a.toggleMenu.d-inline-block.d-lg-none
                     i.mdi.mdi-menu
@@ -79,6 +79,8 @@ html(lang="en")
               ul.nav
                 .nav-close
                   i.mdi.mdi-close.d-block.d-lg-none
+                li.nav-item.category-btn.d-block.d-lg-none
+                  a DANH MỤC SẢN PHẨM
                 li.nav-item
                   a(href='index.html') Ghế văn phòng
                 li.nav-item
@@ -101,9 +103,278 @@ html(lang="en")
 
         
 
+    .modal.quickview.fade.product-modal-1.show(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle')
+      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+        .modal-content
+          .modal-header
+            h5#exampleModalCenterTitle.modal-title Xem nhanh sản phẩm
+            button.close(type='button', data-dismiss='modal', aria-label='Close')
+              span(aria-hidden='true') ×
+          .modal-body
+            .row
+              .col-lg-6
+                .modal-img
+                  img(src='../img/product-1.png')
+                      
+              .col-lg-6
+                .quickview-detail
+                  h2 Logitech G502 Proteus Spectrum
+                  h4.price-product
+                    | Giá: Liên hệ
+                  h5
+                    | This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+                  .quantity
+                    span Số lượng: 
+                    button.waves-effect.waves-light -
+                    input(type='number', value='1', min='1')
+                    button.waves-effect.waves-light +
+                    button.custom-cart thêm vào giỏ
+                .tags
+                  | Thẻ tag: 
+                  span 
+                    a(href='#') Đặc sản Hàn quốc
+                  | ,
+                  span 
+                    a(href='#') Thời trang Hàn Quốc
+          .modal-footer
+            button.btn.btn-light(type='button', data-dismiss='modal') Đóng
+
     block article
+      article
+        block slider
+          section.slider
+            .container
+              .owl-carousel.slider-carousel.owl-theme
+                .item
+                  a(href='san-pham.html')
+                    img(src='../img/slider-1.png')
+                .item
+                  a(href='san-pham.html')
+                    img(src='../img/slider-2.png')
+        
+        section.content
+          .container
+            .left
+              .category
+                .category-close.d-block.d-lg-none
+                  i.mdi.mdi-arrow-left
+
+                .box-category
+                  h4
+                    a(href='san-pham.html', title='Ghế văn phòng') ghế văn phòng
+                  ul
+                    li
+                      a(href='san-pham.html') Ghế lưới văn phòng
+                    li
+                      a(href='san-pham.html') Ghế lưới cao cấp
+                    li
+                      a(href='san-pham.html') Ghế xoay văn phòng
+                    li
+                      a(href='san-pham.html') Ghế nhân viên
+                    li
+                      a(href='san-pham.html') Ghế nhân viên cao cấp
+                    li
+                      a(href='san-pham.html') Ghế lãnh đạo
+                    li
+                      a(href='san-pham.html') Ghế lãnh đạo cao cấp
+                    li
+                      a(href='san-pham.html') Ghế phòng họp
+                    li
+                      a(href='san-pham.html') Ghế văn phòng
+                    li
+                      a(href='san-pham.html') Ghế training
+                
+                .box-category
+                  h4
+                    a(href='san-pham.html', title='BÀN GHẾ BAR & CAFE') BÀN GHẾ BAR & CAFE
+                  ul
+                    li
+                      a(href='san-pham.html') Ghế bar
+                    li
+                      a(href='san-pham.html') Ghế cafe
+                    li
+                      a(href='san-pham.html') Bàn bar
+                
+                .box-category
+                  h4
+                    a(href='san-pham.html', title='SOFA & LOUNGE & SOFT SEATING') SOFA & LOUNGE & SOFT SEATING
+                  ul
+                    li
+                      a(href='san-pham.html') Ghế sofa
+                    li
+                      a(href='san-pham.html') Ghế Lounge
+                    li
+                      a(href='san-pham.html') Ghế Stool
+
+                .box-category
+                  h4
+                    a(href='san-pham.html', title='BÀN & TỦ & KỆ VĂN PHÒNG') BÀN & TỦ & KỆ VĂN PHÒNG
+                  ul
+                    li
+                      a(href='san-pham.html') Bàn làm việc nhập khẩu
+                    li
+                      a(href='san-pham.html') Bàn văn phòng
+                    li
+                      a(href='san-pham.html') Tủ kệ văn phòng
+                    li
+                      a(href='san-pham.html') Bàn tiếp khách
+                    li
+                      a(href='san-pham.html') Bàn lãnh đạo
+                    li
+                      a(href='san-pham.html') Bàn họp
+                    li
+                      a(href='san-pham.html') Tủ sắt văn phòng
+                    li
+                      a(href='san-pham.html') Bàn tủ kệ thiết kế theo yêu cầu
+
+              .seller
+                h4.title sản phẩm bán chạy
+
+                .box-seller
+                  .box-seller-img
+                    span -15%
+                    a(href='chi-tiet-san-pham.html')
+                      img(src='../img/product-1.png')
+                  .box-seller-detail  
+                    h5
+                      a(href='chi-tiet-san-pham.html', title='Ghế lưới Halona')
+                        | Ghế lưới Halona
+                    h4 
+                      | 1,095,000 VNĐ
+                      span 2,000,000 VNĐ
+
+                .box-seller
+                  .box-seller-img
+                    span -15%
+                    a(href='chi-tiet-san-pham.html')
+                      img(src='../img/product-2.png')
+                  .box-seller-detail  
+                    h5
+                      a(href='chi-tiet-san-pham.html', title='Ghế lưới Halona')
+                        | Ghế lưới Halona
+                    h4 
+                      | 1,095,000 VNĐ
+                      span 2,000,000 VNĐ
+                
+                .box-seller
+                  .box-seller-img
+                    span -15%
+                    a(href='chi-tiet-san-pham.html')
+                      img(src='../img/product-1.png')
+                  .box-seller-detail  
+                    h5
+                      a(href='chi-tiet-san-pham.html', title='Ghế lưới Halona')
+                        | Ghế lưới Halona
+                    h4 
+                      | 1,095,000 VNĐ
+                      span 2,000,000 VNĐ
+                
+                .box-seller
+                  .box-seller-img
+                    span -15%
+                    a(href='chi-tiet-san-pham.html')
+                      img(src='../img/product-2.png')
+                  .box-seller-detail  
+                    h5
+                      a(href='chi-tiet-san-pham.html', title='Ghế lưới Halona')
+                        | Ghế lưới Halona
+                    h4 
+                      | 1,095,000 VNĐ
+                      span 2,000,000 VNĐ
+                
+                .box-seller
+                  .box-seller-img
+                    span -15%
+                    a(href='chi-tiet-san-pham.html')
+                      img(src='../img/product-1.png')
+                  .box-seller-detail  
+                    h5
+                      a(href='chi-tiet-san-pham.html', title='Ghế lưới Halona')
+                        | Ghế lưới Halona
+                    h4 
+                      | 1,095,000 VNĐ
+                      span 2,000,000 VNĐ
+            .main
+              block main
+
     
     block footer
+      section.footer
+        .container
+          .row
+            .col-lg-4.col-md-6
+              .contact
+                h4 thông tin liên hệ
+                h5 SIÊU THỊ GHẾ VĂN PHÒNG THANH THÚY
+                ul
+                  li
+                    i.mdi.mdi-map-outline
+                    | Địa chỉ: 108B Đông Hưng Thuận, P. Đông Hưng Thuận, Quận 12, Tp.HCM
+                  li
+                    i.mdi.mdi-deskphone
+                    | Hotline: 0937 688 238 - 01263 818 581
+                  li
+                    i.mdi.mdi-email-outline
+                    | Email: sieuthighevanphong@gmail.com
+                  li
+                    i.mdi.mdi-note-outline
+                    | Mã số thuế: 345783094890dfg
+            
+            .col-lg-2.col-md-6
+              .about
+                h4 về chúng tôi
+                ul
+                  li
+                    a(href='gioi-thieu.html') Giới thiệu
+                  li
+                    a(href='huong-dan-mua-hang.html') Hướng dẫn mua hàng
+                  li
+                    a(href='thong-tin.html') Thông tin
+                  li
+                    a(href='khuyen-mai.html') Khuyến mãi
+                  li
+                    a(href='lien-he.html') Liên hệ
+            
+            .col-lg-3.col-md-6
+              .policy
+                h4 về chúng tôi
+                ul
+                  li
+                    a(href='chinh-sach.html') Chính sách đổi trả hàng
+                  li
+                    a(href='chinh-sach.html') Chính sách thanh toán
+                  li
+                    a(href='chinh-sach.html') Chính sách bảo mật thông tin
+                  li
+                    a(href='chinh-sach.html') Chính sách vận chuyển 
+                  li
+                    a(href='chinh-sach.html') Chính sách bảo hành
+            
+            .col-lg-3.col-md-6
+              .social
+                h4 mạng xã hội
+
+                a(href='#')
+                  i.mdi.mdi-facebook
+                a(href='#')
+                  i.mdi.mdi-twitter
+                a(href='#')
+                  i.mdi.mdi-youtube
+                a(href='#')
+                  i.mdi.mdi-google-plus
+                
+                ul
+                  li Đang online: 55
+                  li Tổng truy cập: 555555
+
+                img(src='../img/bo-cong-thuong.png')
+
+          .copyright.text-center
+            h5 Copyright @ 2018 Sieu Thi Ghe Van Phong Thanh Thuy. All Reserved. Designed by Tri Viet
+          
+
+
+
                     
                     
                     
